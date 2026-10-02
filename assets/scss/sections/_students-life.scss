@@ -1,0 +1,501 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Students Life Section
+--------------------------------------------------------------*/
+.students-life {
+
+  // Student Life Intro
+  .student-life-intro {
+    padding: 15px;
+
+    h3 {
+      margin-bottom: 20px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 60px;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+    }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+
+    .btn {
+      padding: 10px 25px;
+      border-radius: 5px;
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+      }
+    }
+  }
+
+  // Student Organizations
+  .student-organizations {
+    h3 {
+      margin-bottom: 30px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 80px;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+    }
+
+    .organization-card {
+      background-color: var(--surface-color);
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .icon-box {
+        width: 60px;
+        height: 60px;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        i {
+          font-size: 28px;
+          color: var(--accent-color);
+        }
+      }
+
+      h5 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: var(--heading-color);
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+      }
+
+      .badge {
+        background-color: color-mix(in srgb, var(--heading-color), transparent 80%);
+        color: var(--heading-color);
+        padding: 5px 12px;
+        border-radius: 25px;
+        font-weight: normal;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  // Athletics & Recreation
+  .athletics-programs {
+    h3 {
+      margin-bottom: 30px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 80px;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+    }
+
+    .swiper-wrapper {
+      height: auto !important;
+    }
+
+    .athletics-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+      img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+      }
+
+      .athletics-content {
+        padding: 20px;
+        background-color: var(--surface-color);
+
+        h5 {
+          font-size: 1.1rem;
+          margin-bottom: 10px;
+          color: var(--heading-color);
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .swiper {
+      padding: 0 15px;
+    }
+
+    .swiper-slide {
+      padding-bottom: 60px;
+    }
+
+    .swiper-pagination {
+      margin-top: 20px;
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+        opacity: 1;
+
+        &-active {
+          background-color: var(--accent-color);
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  // Campus Facilities
+  .campus-facilities {
+    h3 {
+      margin-bottom: 30px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 80px;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+    }
+
+    .facility-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+      height: 100%;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+      }
+
+      .facility-info {
+        padding: 16px;
+        background-color: var(--surface-color);
+
+        h5 {
+          font-size: 1.05rem;
+          margin-bottom: 8px;
+          color: var(--heading-color);
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Student Support Services
+  .support-services {
+    h3 {
+      margin-bottom: 30px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 80px;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+    }
+
+    .service-card {
+      padding: 30px;
+      background-color: var(--surface-color);
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+      height: 100%;
+      transition: all 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+        .icon-box {
+          background-color: var(--accent-color);
+
+          i {
+            color: var(--contrast-color);
+          }
+        }
+      }
+
+      .icon-box {
+        width: 65px;
+        height: 65px;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+
+        i {
+          font-size: 30px;
+          color: var(--accent-color);
+          transition: all 0.3s ease;
+        }
+      }
+
+      h5 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: var(--heading-color);
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+      }
+
+      .service-link {
+        color: var(--accent-color);
+        font-weight: 500;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        i {
+          margin-left: 5px;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          color: color-mix(in srgb, var(--accent-color), transparent 25%);
+
+          i {
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+  }
+
+  // Student Gallery
+  .student-gallery {
+    h3 {
+      margin-bottom: 30px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 80px;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+    }
+
+    .gallery-item {
+      display: block;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 20px;
+
+      img {
+        transition: all 0.4s ease;
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+      }
+
+      .gallery-overlay {
+        position: absolute;
+        inset: 0;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.4s ease;
+
+        i {
+          color: var(--contrast-color);
+          font-size: 2rem;
+          transform: scale(0.5);
+          transition: all 0.3s ease;
+        }
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+          opacity: 1;
+
+          i {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+
+  // CTA Block
+  .cta-block {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    padding: 40px;
+    border-radius: 10px;
+
+    h3 {
+      color: var(--heading-color);
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 0;
+      opacity: 0.9;
+    }
+
+    .btn {
+      padding: 10px 24px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+
+      &.btn-primary {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: var(--contrast-color);
+
+        &:hover {
+          background-color: color-mix(in srgb, var(--accent-color), black 15%);
+          border-color: color-mix(in srgb, var(--accent-color), black 15%);
+        }
+      }
+
+      &.btn-outline-primary {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+
+        &:hover {
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+        }
+      }
+    }
+  }
+
+  // Responsive Styles
+  @media (max-width: 992px) {
+    .student-life-intro {
+      margin-top: 30px;
+    }
+
+    .cta-block {
+      padding: 30px;
+
+      .col-lg-4 {
+        text-align: left !important;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .organization-card,
+    .service-card {
+      margin-bottom: 20px;
+    }
+
+    .student-gallery .gallery-item {
+      margin-bottom: 15px;
+    }
+
+    .cta-block {
+      padding: 25px;
+
+      .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+
+        &.ms-2 {
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    .student-life-intro h3,
+    .student-organizations h3,
+    .athletics-programs h3,
+    .campus-facilities h3,
+    .support-services h3,
+    .student-gallery h3 {
+      font-size: 1.5rem;
+    }
+
+    .facility-card,
+    .service-card {
+      margin-bottom: 15px;
+    }
+  }
+}

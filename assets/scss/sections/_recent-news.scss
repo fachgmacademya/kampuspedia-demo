@@ -1,0 +1,137 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Recent News Section
+--------------------------------------------------------------*/
+.recent-news {
+  .post-item {
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    gap: 24px;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+      .post-title a {
+        color: var(--accent-color);
+      }
+
+      .post-img img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .post-img {
+    flex: 0 0 280px;
+    overflow: hidden;
+
+    img {
+      width: 280px;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+  }
+
+  .post-content {
+    padding: 24px 24px 24px 0;
+  }
+
+  .category {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 16px;
+    margin-bottom: 16px;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    color: var(--accent-color);
+    border-radius: 50px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+    }
+  }
+
+  .post-title {
+    margin: 0 0 16px 0;
+
+    a {
+      color: var(--heading-color);
+      font-size: 24px;
+      font-weight: 700;
+      transition: 0.3s;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  .post-description {
+    color: var(--default-color);
+    margin: 0 0 24px 0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .post-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+
+  .post-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+
+    .author-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--heading-color);
+    }
+  }
+
+  .post-date {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+  }
+
+  @media (max-width: 991px) {
+    .post-item {
+      flex-direction: column;
+    }
+
+    .post-img {
+      flex: 0 0 auto;
+
+      img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    .post-content {
+      padding: 24px;
+    }
+
+    .post-title a {
+      font-size: 20px;
+    }
+  }
+}

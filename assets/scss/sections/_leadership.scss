@@ -1,0 +1,305 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Leadership Section
+--------------------------------------------------------------*/
+.leadership {
+  .intro-wrapper {
+    margin-bottom: 5rem;
+  }
+
+  .subtitle {
+    display: block;
+    color: var(--accent-color);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .title {
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .intro-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      transform: scale(1.01);
+    }
+
+    .experience-badge {
+      position: absolute;
+      bottom: 30px;
+      left: -20px;
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+      .years {
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+
+      .text {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 500;
+        max-width: 140px;
+      }
+    }
+  }
+
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .highlight-item {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+
+      .icon-box {
+        width: 50px;
+        height: 50px;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        i {
+          color: var(--accent-color);
+          font-size: 1.5rem;
+        }
+      }
+
+      .content {
+        h4 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .leadership-section {
+    margin-top: 2rem;
+
+    .section-header {
+      max-width: 700px;
+      margin: 0 auto 3rem;
+
+      .description {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .team-card {
+    height: 380px;
+    margin-bottom: 15px;
+    perspective: 1000px;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    border-radius: 12px;
+    overflow: hidden;
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .card-front {
+      background-color: var(--surface-color);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      z-index: 1;
+
+      .member-image {
+        height: 280px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.5s;
+        }
+      }
+
+      .member-info {
+        padding: 15px;
+
+        h4 {
+          font-size: 1.15rem;
+          font-weight: 700;
+          margin-bottom: 3px;
+        }
+
+        p {
+          color: var(--accent-color);
+          font-size: 0.9rem;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
+    }
+
+    .card-back {
+      background: var(--surface-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      bottom: -100%;
+      z-index: 2;
+      transition: bottom 0.3s ease-in-out;
+
+      h4 {
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+      }
+
+      .position {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .bio {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 10px;
+
+        a {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(255, 255, 255, 0.15);
+          border-radius: 50%;
+          color: var(--contrast-color);
+          font-size: 1.1rem;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .card-back {
+        bottom: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .team-card {
+      height: 360px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .title {
+      font-size: 2.2rem;
+    }
+
+    .intro-image .experience-badge {
+      bottom: 20px;
+      left: -10px;
+      padding: 12px 20px;
+
+      .years {
+        font-size: 1.8rem;
+      }
+
+      .text {
+        font-size: 0.8rem;
+      }
+    }
+
+    .team-card {
+      height: 380px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .intro-wrapper {
+      margin-bottom: 3rem;
+    }
+
+    .title {
+      font-size: 1.8rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .highlights .highlight-item .icon-box {
+      width: 45px;
+      height: 45px;
+    }
+
+    .leadership-section .section-header {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .team-card {
+      height: 360px;
+    }
+  }
+}
