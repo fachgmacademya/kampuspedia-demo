@@ -1,0 +1,89 @@
+# robots.txt for Kampus Pedia
+# Website: https://kampuspedia.web.id/
+# Optimized for Search Engines, AI Overviews (AEO), and Generative Search (GEO)
+
+# General Search Engines & Crawlers
+User-agent: *
+Allow: /
+Disallow: /forms/
+Disallow: /assets/vendor/
+
+# Google Crawlers (Google Search & Google AI Overview)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: GoogleOther-Image
+Allow: /
+
+User-agent: GoogleOther-Video
+Allow: /
+
+# OpenAI Crawlers (ChatGPT & SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic Claude Crawlers
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI Crawler
+User-agent: PerplexityBot
+Allow: /
+
+# Apple Intelligence & Applebot
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Bingbot & Copilot
+User-agent: Bingbot
+Allow: /
+
+# Meta AI Crawlers
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Other Search & AI Crawlers
+User-agent: YouBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://kampuspedia.web.id/sitemap.xml

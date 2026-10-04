@@ -1,31 +1,119 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="id">
 
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Beranda - Kampus Pedia</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
-  <!-- Favicons -->
-  <link href="assets/img/favicon.webp" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect" />
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Kampus Pedia - Portal Informasi Kampus & Panduan Mahasiswa Indonesia</title>
+  <meta name="title" content="Kampus Pedia - Portal Informasi Kampus & Panduan Mahasiswa Indonesia" />
+  <meta name="description" content="Kampus Pedia adalah portal informasi kampus terlengkap di Indonesia. Temukan panduan kuliah, info beasiswa, fasilitas kampus, kehidupan mahasiswa, dan artikel edukasi terpercaya." />
+  <meta name="keywords" content="kampus pedia, informasi kampus, panduan kuliah, beasiswa mahasiswa, kehidupan kampus, pendidikan tinggi indonesia" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Kampus Pedia" />
+  <meta name="language" content="Indonesian" />
+  <meta name="revisit-after" content="7 days" />
+  <link rel="canonical" href="https://kampuspedia.web.id/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kampuspedia.web.id/" />
+  <meta property="og:site_name" content="Kampus Pedia" />
+  <meta property="og:title" content="Kampus Pedia - Portal Informasi Kampus & Panduan Mahasiswa Indonesia" />
+  <meta property="og:description" content="Kampus Pedia adalah portal informasi kampus terlengkap di Indonesia. Temukan panduan kuliah, info beasiswa, fasilitas kampus, kehidupan mahasiswa, dan artikel edukasi terpercaya." />
+  <meta property="og:image" content="https://kampuspedia.web.id/assets/img/og-image.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Kampus Pedia - Portal Informasi Kampus & Panduan Mahasiswa Indonesia" />
+  <meta property="og:locale" content="id_ID" />
+
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@kampuspedia" />
+  <meta name="twitter:creator" content="@kampuspedia" />
+  <meta name="twitter:title" content="Kampus Pedia - Portal Informasi Kampus & Panduan Mahasiswa Indonesia" />
+  <meta name="twitter:description" content="Kampus Pedia adalah portal informasi kampus terlengkap di Indonesia. Temukan panduan kuliah, info beasiswa, fasilitas kampus, kehidupan mahasiswa, dan artikel edukasi terpercaya." />
+  <meta name="twitter:image" content="https://kampuspedia.web.id/assets/img/og-image.webp" />
+  <meta name="twitter:image:alt" content="Kampus Pedia - Portal Informasi Kampus & Panduan Mahasiswa Indonesia" />
+
+  <!-- AEO / GEO: AI Overview & Answer Engine Optimization -->
+  <meta name="speakable" content="description" />
+  <meta name="category" content="Education, Campus Life, Indonesia" />
+  <meta name="coverage" content="Indonesia" />
+  <meta name="distribution" content="global" />
+  <meta name="rating" content="general" />
+
+  <!-- PageSpeed / Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/webp" href="assets/img/favicon.webp" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/img/site.webmanifest" />
+  <meta name="theme-color" content="#1a56db" />
+  <meta name="msapplication-TileColor" content="#1a56db" />
+
+  <!-- Fonts (display=swap for performance) -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
-</head>
+
+  <!-- Schema.org JSON-LD: WebPage (SEO + AEO/GEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Kampus Pedia - Portal Informasi Kampus & Panduan Mahasiswa Indonesia",
+    "description": "Kampus Pedia adalah portal informasi kampus terlengkap di Indonesia. Temukan panduan kuliah, info beasiswa, fasilitas kampus, kehidupan mahasiswa, dan artikel edukasi terpercaya.",
+    "url": "https://kampuspedia.web.id/",
+    "image": "https://kampuspedia.web.id/assets/img/og-image.webp",
+    "inLanguage": "id-ID",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Kampus Pedia",
+      "url": "https://kampuspedia.web.id",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kampuspedia.web.id/assets/img/logo-website-edukasi.webp"
+      },
+      "sameAs": [
+        "https://www.instagram.com/kampuspedia",
+        "https://twitter.com/kampuspedia",
+        "https://www.facebook.com/kampuspedia"
+      ]
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Beranda",
+          "item": "https://kampuspedia.web.id/"
+        }
+      ]
+    }
+  }
+  </script></head>
 
 <body class="index-page">
   <header class="header d-flex align-items-center sticky-top" id="header">
@@ -40,7 +128,8 @@
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="kampus.html">Kampus</a></li>
           <li><a href="students-life.html">Kehidupan Mahasiswa</a></li>
-          <li class="dropdown"><a href="panduan.html"><span>Panduan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="panduan.html"><span>Panduan</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="panduan/panduan-masuk-kuliah.html">Panduan Masuk Kuliah</a></li>
               <li><a href="panduan/panduan-perkuliahan.html">Panduan Perkuliahan</a></li>
@@ -84,8 +173,7 @@
                 </div>
               </div>
               <div class="action-buttons">
-                <a class="btn-primary" href="program-studi.html">Mulai Perjalanan Anda</a>
-                <a class="btn-secondary" href="fasilitas.html">Tur Virtual</a>
+                <a class="btn-primary" href="about.html">Lihat Lebih Lanjut</a>
               </div>
             </div>
             <div class="col-lg-6 hero-media" data-aos="zoom-in" data-aos-delay="200">
@@ -306,7 +394,6 @@
                     <span>Gelar Sarjana</span>
                   </div>
                 </div>
-                <a class="discover-btn" href="program-studi.html">Lihat Program</a>
               </div>
             </div>
           </div><!-- End Program Banner -->
@@ -326,9 +413,6 @@
                         <span>Gelar Magister</span>
                       </div>
                     </div>
-                    <div class="item-arrow">
-                      <i class="bi bi-arrow-right"></i>
-                    </div>
                   </div>
                 </div>
                 <div class="col-12" data-aos="fade-left" data-aos-delay="300">
@@ -343,9 +427,6 @@
                         <span>2 Tahun</span>
                         <span>Sertifikat</span>
                       </div>
-                    </div>
-                    <div class="item-arrow">
-                      <i class="bi bi-arrow-right"></i>
                     </div>
                   </div>
                 </div>
@@ -362,9 +443,6 @@
                         <span>Gelar Sarjana</span>
                       </div>
                     </div>
-                    <div class="item-arrow">
-                      <i class="bi bi-arrow-right"></i>
-                    </div>
                   </div>
                 </div>
                 <div class="col-12" data-aos="fade-left" data-aos-delay="500">
@@ -379,9 +457,6 @@
                         <span>3 Tahun</span>
                         <span>Gelar Sarjana</span>
                       </div>
-                    </div>
-                    <div class="item-arrow">
-                      <i class="bi bi-arrow-right"></i>
                     </div>
                   </div>
                 </div>
@@ -443,13 +518,6 @@
                     <span>Pembelajaran aktif dan kolaboratif sejak hari pertama.</span>
                   </div>
                 </div>
-              </div>
-              <div class="cta-section" data-aos="fade-up" data-aos-delay="600">
-                <a class="btn-primary" href="student-activities.html">Lihat Lebih Banyak</a>
-                <a class="btn-link" href="virtual-tour.html">
-                  <i class="bi bi-play-circle"></i>
-                  <span>Ikuti Tur Virtual</span>
-                </a>
               </div>
             </div>
           </div>
@@ -785,8 +853,8 @@
                       </div>
                     </div>
                     <div class="highlights-cta">
-                      <a class="cta-btn primary" href="#">Jelajahi Program</a>
-                      <a class="cta-btn secondary" href="#">Unduh Brosur</a>
+                      <a class="cta-btn primary" href="program-studi.html">Jelajahi Program</a>
+                      <a class="cta-btn secondary" href="https://wa.me/6281234567890?text=Halo%20Kampus%20Pedia%2C%20saya%20ingin%20tanya%20mengenai%20program%20studi" target="_blank" rel="noopener noreferrer">Tanya Program</a>
                     </div>
                   </div>
                 </div>
@@ -822,112 +890,7 @@
         </div>
       </div>
     </section><!-- /Stats Section -->
-    <!-- Recent News Section -->
-    <section class="recent-news section" id="recent-news">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Berita Terbaru</h2>
-        <p>Setiap mahasiswa mendapat bimbingan dari dosen berpengalaman.</p>
-      </div><!-- End Section Title -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="100">
-            <article class="post-item d-flex">
-              <div class="post-img">
-                <img alt="" class="img-fluid" loading="lazy" src="assets/img/blog/blog-post-1.webp" />
-              </div>
-              <div class="post-content flex-grow-1">
-                <a class="category" href="#">Desain</a>
-                <h2 class="post-title">
-                  <a href="#">Tips Belajar Efektif untuk Mahasiswa Baru</a>
-                </h2>
-                <p class="post-description">
-                  Kami berkomitmen menghadirkan pendidikan bermutu yang menyiapkan mahasiswa menghadapi tantangan zaman
-                  dengan ilmu, karakter, dan keterampilan.
-                </p>
-                <div class="post-meta">
-                  <div class="post-author">
-                    <img alt="" class="img-fluid" src="assets/img/person/person-f-12.webp" />
-                    <span class="author-name">Lina Cahya</span>
-                  </div>
-                  <span class="post-date">15 Mar 2026</span>
-                </div>
-              </div>
-            </article>
-          </div><!-- End post item -->
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
-            <article class="post-item d-flex">
-              <div class="post-img">
-                <img alt="" class="img-fluid" loading="lazy" src="assets/img/blog/blog-post-2.webp" />
-              </div>
-              <div class="post-content flex-grow-1">
-                <a class="category" href="#">Produk</a>
-                <h2 class="post-title">
-                  <a href="#">Cara Memilih Program Studi yang Tepat</a>
-                </h2>
-                <p class="post-description">
-                  Pendidikan berkualitas membuka pintu menuju masa depan.
-                </p>
-                <div class="post-meta">
-                  <div class="post-author">
-                    <img alt="" class="img-fluid" src="assets/img/person/person-f-13.webp" />
-                    <span class="author-name">Sofia Rahayu</span>
-                  </div>
-                  <span class="post-date">22 Apr 2026</span>
-                </div>
-              </div>
-            </article>
-          </div><!-- End post item -->
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
-            <article class="post-item d-flex">
-              <div class="post-img">
-                <img alt="" class="img-fluid" loading="lazy" src="assets/img/blog/blog-post-3.webp" />
-              </div>
-              <div class="post-content flex-grow-1">
-                <a class="category" href="#">Rekayasa Perangkat Lunak</a>
-                <h2 class="post-title">
-                  <a href="#">Kurikulum Merdeka di Perguruan Tinggi</a>
-                </h2>
-                <p class="post-description">
-                  Setiap mahasiswa mendapat bimbingan dari dosen berpengalaman.
-                </p>
-                <div class="post-meta">
-                  <div class="post-author">
-                    <img alt="" class="img-fluid" src="assets/img/person/person-m-10.webp" />
-                    <span class="author-name">Lukas Tirta</span>
-                  </div>
-                  <span class="post-date">8 Mei 2026</span>
-                </div>
-              </div>
-            </article>
-          </div><!-- End post item -->
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="400">
-            <article class="post-item d-flex">
-              <div class="post-img">
-                <img alt="" class="img-fluid" loading="lazy" src="assets/img/blog/blog-post-4.webp" />
-              </div>
-              <div class="post-content flex-grow-1">
-                <a class="category" href="#">Kreatif</a>
-                <h2 class="post-title">
-                  <a href="#">Peluang Beasiswa Tahun Ajaran Baru</a>
-                </h2>
-                <p class="post-description">
-                  Kami berkomitmen menghadirkan pendidikan bermutu yang menyiapkan mahasiswa menghadapi tantangan zaman
-                  dengan ilmu, karakter, dan keterampilan.
-                </p>
-                <div class="post-meta">
-                  <div class="post-author">
-                    <img alt="" class="img-fluid" src="assets/img/person/person-f-14.webp" />
-                    <span class="author-name">Emma Pertiwi</span>
-                  </div>
-                  <span class="post-date">30 Jun 2026</span>
-                </div>
-              </div>
-            </article>
-          </div><!-- End post item -->
-        </div>
-      </div>
-    </section><!-- /Recent News Section -->
+
     <!-- Events Section -->
     <section class="events section" id="events">
       <!-- Section Title -->
@@ -964,7 +927,7 @@
                   </div>
                 </div>
                 <div class="event-footer">
-                  <a class="register-btn" href="#">Daftar Sekarang</a>
+                  <a class="register-btn" href="https://wa.me/6281234567890?text=Halo%20Kampus%20Pedia%2C%20saya%20ingin%20mendaftar%20acara" target="_blank" rel="noopener noreferrer">Daftar Sekarang</a>
                   <div class="event-share">
                     <i class="bi bi-share"></i>
                     <i class="bi bi-heart"></i>
@@ -1000,7 +963,7 @@
                   </div>
                 </div>
                 <div class="event-footer">
-                  <a class="register-btn" href="#">Daftar Sekarang</a>
+                  <a class="register-btn" href="https://wa.me/6281234567890?text=Halo%20Kampus%20Pedia%2C%20saya%20ingin%20mendaftar%20acara" target="_blank" rel="noopener noreferrer">Daftar Sekarang</a>
                   <div class="event-share">
                     <i class="bi bi-share"></i>
                     <i class="bi bi-heart"></i>
@@ -1035,7 +998,7 @@
                   </div>
                 </div>
                 <div class="event-footer">
-                  <a class="register-btn" href="#">Daftar Sekarang</a>
+                  <a class="register-btn" href="https://wa.me/6281234567890?text=Halo%20Kampus%20Pedia%2C%20saya%20ingin%20mendaftar%20acara" target="_blank" rel="noopener noreferrer">Daftar Sekarang</a>
                   <div class="event-share">
                     <i class="bi bi-share"></i>
                     <i class="bi bi-heart"></i>
@@ -1071,7 +1034,7 @@
                   </div>
                 </div>
                 <div class="event-footer">
-                  <a class="register-btn" href="#">Daftar Sekarang</a>
+                  <a class="register-btn" href="https://wa.me/6281234567890?text=Halo%20Kampus%20Pedia%2C%20saya%20ingin%20mendaftar%20acara" target="_blank" rel="noopener noreferrer">Daftar Sekarang</a>
                   <div class="event-share">
                     <i class="bi bi-share"></i>
                     <i class="bi bi-heart"></i>
@@ -1106,7 +1069,7 @@
                   </div>
                 </div>
                 <div class="event-footer">
-                  <a class="register-btn" href="#">Daftar Sekarang</a>
+                  <a class="register-btn" href="https://wa.me/6281234567890?text=Halo%20Kampus%20Pedia%2C%20saya%20ingin%20mendaftar%20acara" target="_blank" rel="noopener noreferrer">Daftar Sekarang</a>
                   <div class="event-share">
                     <i class="bi bi-share"></i>
                     <i class="bi bi-heart"></i>
@@ -1142,7 +1105,7 @@
                   </div>
                 </div>
                 <div class="event-footer">
-                  <a class="register-btn" href="#">Daftar Sekarang</a>
+                  <a class="register-btn" href="https://wa.me/6281234567890?text=Halo%20Kampus%20Pedia%2C%20saya%20ingin%20mendaftar%20acara" target="_blank" rel="noopener noreferrer">Daftar Sekarang</a>
                   <div class="event-share">
                     <i class="bi bi-share"></i>
                     <i class="bi bi-heart"></i>
@@ -1154,8 +1117,33 @@
         </div>
       </div>
     </section><!-- /Events Section -->
+
+    <!-- Call To Action (CTA) Section -->
+    <section class="cta-section section" id="cta-section">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <div class="cta-wrapper">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <span class="cta-badge mb-2"><i class="bi bi-rocket-takeoff-fill me-2"></i>Mulai Masa Depanmu</span>
+              <h2 class="cta-title">Siap Memulai Perjalanan Akademik Anda Bersama Kampus Pedia?</h2>
+              <p class="cta-text">Dapatkan informasi pendaftaran, program beasiswa, dan konsultasi jurusan secara gratis bersama tim konselor kami.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <div class="cta-actions">
+                <a href="https://wa.me/6281234567890?text=Halo%20Kampus%20Pedia%2C%20saya%20ingin%20konsultasi%20pendaftaran" target="_blank" rel="noopener noreferrer" class="btn-cta-primary">
+                  <i class="bi bi-whatsapp me-2"></i>Konsultasi Gratis
+                </a>
+                <a href="program-studi.html" class="btn-cta-secondary">
+                  Lihat Program <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /CTA Section -->
   </main>
-    <footer class="footer position-relative light-background" id="footer">
+  <footer class="footer position-relative light-background" id="footer">
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
@@ -1213,7 +1201,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">Kampus Pedia</strong> <span>Seluruh Hak Dilindungi</span></p>
+      <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">Kampus Pedia</strong> <span>Seluruh Hak
+          Dilindungi</span></p>
     </div>
   </footer>
   <!-- Scroll Top -->
