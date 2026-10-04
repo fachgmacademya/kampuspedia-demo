@@ -40,8 +40,12 @@
    * Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
+    navmenu.addEventListener('click', (e) => {
       if (document.querySelector('.mobile-nav-active')) {
+        // Do not close mobile menu if clicking a dropdown toggle link
+        if (navmenu.parentElement.classList.contains('dropdown') || (navmenu.nextElementSibling && navmenu.nextElementSibling.tagName === 'UL')) {
+          return;
+        }
         mobileNavToogle();
       }
     });
@@ -51,12 +55,17 @@
   /**
    * Toggle mobile nav dropdowns
    */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+  document.querySelectorAll('.navmenu .dropdown > a').forEach(navmenu => {
     navmenu.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-      e.stopImmediatePropagation();
+      if (window.innerWidth < 1200) {
+        e.preventDefault();
+        this.classList.toggle('active');
+        const nextUl = this.nextElementSibling;
+        if (nextUl) {
+          nextUl.classList.toggle('dropdown-active');
+        }
+        e.stopImmediatePropagation();
+      }
     });
   });
 
@@ -205,7 +214,7 @@
       if (text.includes('daftar') || text.includes('kunjungan') || text.includes('jadwalkan') || 
           text.includes('konsultasi') || text.includes('hubungi') || text.includes('informasi') || 
           text.includes('bantuan') || text.includes('konfirmasi')) {
-        const waMsg = encodeURIComponent('Halo Kampus Cerdas, saya ingin bertanya mengenai: ' + (btn.innerText.trim() || 'informasi pendaftaran'));
+        const waMsg = encodeURIComponent('Halo Kampus Pedia, saya ingin bertanya mengenai: ' + (btn.innerText.trim() || 'informasi pendaftaran'));
         window.open('https://wa.me/6281234567890?text=' + waMsg, '_blank');
         return;
       }
@@ -229,7 +238,7 @@
       }
 
       // Default feedback if generic button
-      showToast('Permintaan Anda sedang diproses oleh staf Kampus Cerdas.');
+      showToast('Permintaan Anda sedang diproses oleh staf Kampus Pedia.');
     }
   });
 
